@@ -1,0 +1,36 @@
+COLUNAS_EXPORTAR = ['Código Atendimento Paciente','Setor','Classificação','Código do Item','Descrição do Item','Data do Consumo','Quantidade','Unidade','Custo Unitário','Custo Total']
+COLUNAS_EPIMED = ['ATENDIMENTO','INTERNACAO','SAIDA']
+PATH_SCRIPTS = "./data/scripts/"
+PATH_BRONZE_DATA =  "./data/csv/raw/"
+PATH_SILVER_DATA = "./data/csv/processed/"
+PATH_GOLD_DATA = "./data/csv/final/"
+PATH_EXTERNAL_DATA = "./data/csv/external/"
+PATH_ZIP_DATA = "./data/downloads/"
+SCRIPT_DISPENSACOES = "script_dispensacoes.sql"
+SCRIPT_EPIMED = "script_validacao_epimed.sql"
+SCRIPT_ALTERACAO = "script_alteracao_epimed.sql"
+SCRIPT_HEMODIALISE = "script_sessoes_hemodialise.sql"
+PATH_LOG = "imr.log"
+DATE_FORMAT_DB = "%d/%m/%Y"
+ICON_PAGE_DOWNLOAD = ":material/download:"
+ICON_PAGE_UPLOAD = ":material/upload:"
+ICON_PAGE_CONSOLIDACAO = ":material/price_check:"
+REGEX_DATE_PATTERN = r"^([1-9]|([012][0-9])|(3[01]))\/([0]{0,1}[1-9]|1[012])\/\d{4}\s([0-1][0-9]|2[0-3]):([0-6][0-9])$" 
+REGEX_ATENDIMENTO_PATTERN = r"^[2-9]\d{6}"
+REGEX_YEAR_PATTERN = r"\d{4}"
+REGEX_MONTH_NUMBER_PATTERN = r"\d{2}"
+REGEX_MONTH_PATTERN = r"[a-zA-ZçÇ]+[.]"
+MONTH_MASK = {
+    "janeiro" : 1,
+    "fevereiro" : 2,
+    "março" : 3,
+    "abril" : 4,
+    "maio" : 5,
+    "junho" : 6,
+    "julho" : 7,
+    "agosto" : 8,
+    "setembro" : 9,
+    "outubro" : 10,
+    "novembro" : 11,
+    "dezembro" : 12
+}
