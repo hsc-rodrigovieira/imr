@@ -17,7 +17,7 @@ Aplicação desenvolvida para automatizar a coleta, tratamento e envio dos dados
 ```plaintext
 IMR/
 │-- src/                               # Código-fonte principal do projeto
-│   │-- .streamlit/                    # Configurações para aplicação Streamlitbanco de dados)
+│   │-- .streamlit/                    # Configurações para aplicação Streamlit (banco de dados)
 │   │-- data/                          # Diretório de dados
 │   │   │-- csv/                       # Arquivos CSV organizados por status de processamento
 │   │   │   │-- external/              # Dados brutos externos
@@ -35,6 +35,7 @@ IMR/
 │   │       │-- uploadListaEpimed.py   # Faz upload dos pacientes do EPIMED
 │   │-- config.py                      # Arquivo de configuração do projeto
 │   │-- imr.log                        # Logs de execução do sistema
+│   │-- __init__.py                    # Arquivo de execução da aplicação
 │-- .gitignore                         # Arquivos ignorados pelo Git
 │-- requirements.txt                   # Dependências do projeto
 │-- README.md                          # Documentação do projeto
